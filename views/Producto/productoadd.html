@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css"><script src="https://kit.fontawesome.com/78c9eea544.js" crossorigin="anonymous"></script>
+    <title>productoadd</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../assets/img/logo.jpg">
+            <span>
+                <a href="../dashboard.html"><br><strong>Home</strong>
+                <i class="fa-solid fa-arrow-rotate-left"></i></a>
+            </span>
+        </div>
+        <div class="sesion">
+            <img src="../../assets/img/golden.jpg">
+            <span>
+                <strong>Bienvenido,</strong><br>usuario
+                <a href="../login.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+            </span>
+        </div>
+    </header>
+
+    <section id="dashboard">
+        <article class="menu1">
+            <li class="item1"><a href="Usuario.usuario.html"> <i class="fa-solid fa-user"></i>Usuarios</li></a>
+            <li class="item1"><a href="cliente.html"><i class="fa-solid fa-user-group"></i>Clientes</li></a>
+                <li class="item1"><a href="usuario.html"><i class="fa-solid fa-tags"></i>Productos</li></a>
+                    <li class="item1"><a href="pedidos.html"><i class="fa-solid fa-bag-shopping"></i>Pedidos</li></a>
+                        <li class="item1"><a href="reportes.html"><i class="fa-solid fa-file-lines"></i>Reportes</li></a>
+    
+        </article>
+        <article class="contenido">
+        <form action="" method="" class="form-producto">
+            
+            <div class="form-group">
+<label for="descripcion" class="form-label">Descripción
+</label>
+<input type="text" name="descripcion" id="descripcion" 
+class="form-input" placeholder="Ingresa la descripcion del producto">
+            </div>
+
+            <div class="form-group">
+                <label for="nombre" class="form-label">Nombre
+                </label>
+                <input type="text" name="nombre" id="nombre" 
+                class="form-input" placeholder="Ingresa el nombre del producto">
+                            </div>
+
+             <div class="form-group">
+                  <label for="precio" class="form-label">Precio
+                 </label>
+                 <input type="number" name="precio" id="precio" 
+                class="form-input" placeholder="Ingresa el precio del producto">
+              </div>
+
+              <div class="form-group">
+                <label for="categoria" class="form-label">Categorías
+               </label>
+               <select name="categoria" class="form-select">
+                <!--delimita c:foreach-->  
+                <c:foreach>
+                    <option value="id">Juguetes</option>
+                   </c:foreach>
+                   <c:foreach>
+                    <option value="id1">Accesorios</option>
+                   </c:foreach>
+                   <c:foreach>
+                    <option value="id">Vacunas</option>
+                   </c:foreach>
+                   <c:foreach>
+                    <option value="id">Comida</option>
+                   </c:foreach>
+               </select>
+            </div>
+
+        <div class="form-grup">
+            <input type="submit" name="guardar"
+            value="Guardar" class="form-button btn-morado">
+        </div>
+        </form>    
+        
+        
+        </article>
